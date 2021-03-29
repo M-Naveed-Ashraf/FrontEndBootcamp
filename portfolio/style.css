@@ -1,3 +1,18 @@
 body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+.img-container {
+    width: 200px;
+    position: relative;
+    animation: swing 0.8s ease-in-out infinite alternate;
+    transform-origin: center -80px;
+}
+
+@keyframes swing {
+    from { transform: rotate(3deg);}
+    to { transform: rotate(-3deg);}
+}
+.img-container img{
+    box-shadow: 0 10px 20px rgb(44, 38, 38);
 }
